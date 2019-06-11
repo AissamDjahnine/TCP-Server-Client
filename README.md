@@ -1,6 +1,9 @@
 # TCP-Server-Client :e-mail: :busts_in_silhouette:
 
-Implementation of Server/client system to contact two client via network. 
+Implementation of TCP-Server/client system to contact two clients. 
+
+* TCP is suited for applications that require high reliability, and transmission time is relatively less critical. It is used by other protocols like HTTP, HTTPs, FTP, SMTP, Telnet. TCP rearranges data packets in the order specified. There is absolute guarantee that the data transferred remains intact and arrives in the same order in which it was sent. TCP does Flow Control and requires three packets to set up a socket connection, before any user data can be sent. TCP handles reliability and congestion control. It also does error checking and error recovery. Erroneous packets are retransmitted from the source to the destination.
+source : [TCP Server-Client](https://www.geeksforgeeks.org/tcp-server-client-implementation-in-c/)
 
 ## Getting Started & Prerequisites 
 
