@@ -23,19 +23,13 @@ Type the following command to display the version number and location of the com
            $ which gcc
            $ gcc --version
            
-## Running 
-
-
-
-## Execution & tests
+## Execution :  
 
 **Use of the csv files as database :**
 
 **Use the makefile to compile the cpp files :**
 
-Example :
-
-You can check the [makefile]()  :ballot_box_with_check:
+You can check the [makefile](https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/makefile)  :ballot_box_with_check:
 
 **Execute the program :**
 * Server :
@@ -58,7 +52,19 @@ You can check the [makefile]()  :ballot_box_with_check:
 **CLient 1 : Waiting to read the client1 message ( Status : READ )**
 
 <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./client2.jpg" > 
-        
+
+## Tests & results : 
+* Message-vs-Message Chat : while the client 1 is on **WRITING MODE** , the client 2 is on **READING MODE** 
+
+Example : 
+
+ <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./chat_test.jpg" > 
+
+* Sending Signal SIGUSR1 : 
+
+* Sending Signal SIGUSR2 :
+
+
 ## Authors
 
 * **Djahnine Aissam**  - [Profile](https://github.com/AissamDjahnine)
