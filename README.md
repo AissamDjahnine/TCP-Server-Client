@@ -25,8 +25,6 @@ Type the following command to display the version number and location of the com
            
 ## Execution :  
 
-**Use of the csv files as database :**
-
 **Use the makefile to compile the cpp files :**
 
 You can check the [makefile](https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/makefile)  :ballot_box_with_check:
@@ -55,14 +53,32 @@ You can check the [makefile](https://github.com/AissamDjahnine/TCP-Server-Client
 
 ## Tests & results : 
 * Message-vs-Message Chat : while the client 1 is on **WRITING MODE** , the client 2 is on **READING MODE** 
+* The Server displays the information about the : distant port of the two clients,IP adresses and the status of the clients ( Connected , disconnected ) 
 
-Example : 
+**Example :** 
 
- <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./chat_test.jpg" > 
+ <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./chat.jpg" > 
 
 * Sending Signal SIGUSR1 : 
+The signal " SIGUSR1 " ends the connections established between the two clients ( or more ) by closing the server and clients sockets.
+In order to send the signal , we use the command **top** to get the Server and the clients PID and then we use : 
+
+                      kill -SIGUSR2 PID_Server PID_client1 PID_client2
+                      
+The figure below demonstrates the steps above with a display **" THE SERVER WILL DISCONNECT "** :
+
+ <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./sigusr1.jpg" > 
 
 * Sending Signal SIGUSR2 :
+
+The signal " SIGUSR2 " gives us the information about the number of clients already connected to the server.
+In order to send the signal , we use the command **top** to get the Server PID ( in this case : 181 ) and then we use : 
+
+                      kill -SIGUSR2 PID 
+The figure below demonstrates the steps above with a display **" NUMBER OF CLIENTS : ** 2 ** "** :
+
+ <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./sigusr2.jpg" > 
+
 
 
 ## Authors
