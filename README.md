@@ -1,4 +1,4 @@
-# TCP-Server-Client
+# TCP-Server-Client :e-mail: :busts_in_silhouette:
 
 Implementation of Server/client system to contact two client via network. 
 
@@ -41,25 +41,31 @@ You can check the [makefile](https://github.com/AissamDjahnine/TCP-Server-Client
 **Example :** 
 
 * Server example :
-<img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./server.jpg" >         
+
+<img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./server.jpg" >    
+
 * Client  example :
+
 **CLient 1 : Recieving the Welcome message ( Status : WRITE )**
 
 <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./client1.jpg" > 
 
-**CLient 1 : Waiting to read the client1 message ( Status : READ )**
+**CLient 2 : Waiting to read the client1 message ( Status : READ )**
 
 <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./client2.jpg" > 
 
-## Tests & results : 
-* Message-vs-Message Chat : while the client 1 is on **WRITING MODE** , the client 2 is on **READING MODE** 
+
+## Tests & results :
+* Message-vs-Message Chat : while the client 1 is on **WRITING MODE** , the client 2 is on **READING MODE**
+* when a third client is connected , he must wait for the 4 th client since the chat rooms are 2-Max clients.
 * The Server displays the information about the : distant port of the two clients,IP adresses and the status of the clients ( Connected , disconnected ) 
 
 **Example :** 
 
  <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./chat.jpg" > 
 
-* Sending Signal SIGUSR1 : 
+* **Sending Signal SIGUSR1 :** 
+
 The signal " SIGUSR1 " ends the connections established between the two clients ( or more ) by closing the server and clients sockets.
 In order to send the signal , we use the command **top** to get the Server and the clients PID and then we use : 
 
@@ -69,7 +75,7 @@ The figure below demonstrates the steps above with a display **" THE SERVER WILL
 
  <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./sigusr1.jpg" > 
 
-* Sending Signal SIGUSR2 :
+* **Sending Signal SIGUSR2 :**
 
 The signal " SIGUSR2 " gives us the information about the number of clients already connected to the server.
 In order to send the signal , we use the command **top** to get the Server PID ( in this case : 181 ) and then we use : 
