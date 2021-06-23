@@ -89,13 +89,3 @@ The figure below demonstrates the steps above with a display **" NUMBER OF CLIEN
  <img src="https://github.com/AissamDjahnine/TCP-Server-Client/blob/master/files./sigusr2.jpg" > 
 
 
-
-## Authors
-
-* **Djahnine Aissam**  - [Profile](https://github.com/AissamDjahnine)
-
-## Acknowledgments
-
-* Part of this job was supported by : Vincent Fraillon-maison  :thumbsup:
-
-
